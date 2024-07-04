@@ -1,2 +1,2 @@
-# Website.merch
+# Website.personal
 Fauzan M. kamil
