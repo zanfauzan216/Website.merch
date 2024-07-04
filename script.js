@@ -5,6 +5,4 @@ const serives=document.getElementById('Services')
 const kontak=document.getElementById('Contact')
 Menuicon.addEventListener('click',function(){
     menu.classList.toggle('menuop')
-    menu.classList.toggle('display')
-    home.innerText='home';
 })
