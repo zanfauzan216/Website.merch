@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  padding: 0;
+
+a{
+  color: white;
+  text-decoration: none;
+}
+}
+h4{
+  font-family: 'poppins';
+}
+h1{
+  font-family: 'kanit';
+}
+body{
+  background-color: rgba(180, 178, 178, 0.633);
+  font-size: 15px;
+  
+}
+
+img{
+  width: 100%;
+}
+/* HEADER */
+.header{
+  display: grid;
+  grid-template-areas: 
+  'hero hero2 feature-1'
+  'hero hero2 feature-2'
+  ;
+  font-size: 2em;
+  color: white;
+  border: 1px solid black;
+}
+
+.hero{
+  background-image: url(img1.jpg);
+  grid-area: hero;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-left: 1px solid white;
+  display: grid;
+  justify-items: end;
+}
+
+.hero2{
+  background-image: url(img2.jpg);
+  grid-area: hero2;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-1{
+  grid-area: feature-1;
+  background-image: url(img3.jpg);
+  background-repeat: no-repeat;
+  min-height:125px ;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-2{
+  grid-area: feature-2;
+  background-image: url(img4.jpg);
+  background-repeat: no-repeat;
+  min-height:125px ;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+}
+
+/* navbar */
+.navbar{
+  margin-bottom: 10px;
+  padding-top: 10px;
+  list-style: none;
+  display: grid;
+  grid-template-areas: 
+  'brand Home About Contact'
+  'brand Home About Contact'
+  ;
+ justify-items: end;
+ align-items: center;
+ padding-right: 15px;
+
+}
+
+.brand{
+  grid-area: brand;
+width: 100%;
+}
+
+.home{
+grid-area: Home;
+background-color: black;
+color: white;
+width: 25%;
+text-align: center;
+}
+
+.about{
+  background-color: black;
+  color: white;
+  grid-area: About;
+  width: 25%;
+text-align: center;
+}
+
+.contact{
+  background-color: black;
+  color: white;
+  grid-area: Contact;
+  width: 25%;
+text-align: center;
+}
+/* SERVIECE */
+
+.serviece{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  
+}
+
+.serviece div{
+  border-radius: 9px;
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  width: 100%;
+  ;
+  font-size: 20px;
+  border: 1px solid black;
+  box-shadow: 6px 6px 0px -1px rgba(193,157,157,0.56);
+  -webkit-box-shadow: 6px 6px 0px -1px rgba(193,157,157,0.56);
+  -moz-box-shadow: 6px 6px 0px -1px rgba(193,157,157,0.56);
+}
+.menuop{
+  width: 35%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.712);
+   padding-bottom: 30px;
+   display: flex;
+   justify-content: end;
+   transition: all 0.8s;
+}
+.menu{
+  display: none;
+}
+
+#services{
+  text-align: center;
+}
+#galery{
+  text-align: center;
+  margin-top: 10px;
+}
+.galery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+   padding-top: 10px;
+   text-align: center;
+   gap: 3px;
+}
+#judul{
+  display: none;
+}
+@media(max-width:550px){
+     .navbar{
+      display:none ;
+     }
+  #judul{
+    display: block;
+    text-align: center;
+  }
+.container{
+  display: grid;
+  justify-items: center;
+}
+.serviece{
+  display: none;
+}
+#Menuicon{
+  justify-self: flex-end;
+  color: black;
+}
+.menu {
+   display: grid;
+   color: black;
+   justify-content: center;
+   position: fixed;
+  height: 80%;
+}
+
+.menu a{
+  text-align: center;
+  height: 25px;
+color: white;
+font-size: 20px;
+}
+.home{
+  grid-area: home;
+}
+
+     .header{
+      width: 100%;
+      grid-template-areas: 
+      'hero hero hero'
+      'hero2 hero2 hero2'
+      'feature-1 feature-1 feature-1'
+      'feature-2 feature-2 feature-2'
+      ;
+    } 
+
+.galery{
+  grid-template-columns: repeat(3,1fr);
+}
+#services{
+  display: none;
+}
+}
